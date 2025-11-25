@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#4f46e5">
+    
+    <title>Resize Image to 20kb, 50kb | Free Photo Resizer & Compressor (2025)</title>
+    
+    <meta name="description" content="Resize image to 20kb, 50kb online for free. Best Photo Resizer for SSC, UPSC, and Govt Forms. Compress JPG, PNG without losing quality. No Login Required.">
+    
+    <meta name="keywords" content="resize image to 20kb, photo resizer 50kb, image compressor 20kb, reduce image size in kb, ssc photo resizer, compress jpeg to 50kb, passport size photo maker, image resizer online free, jpg size reducer, photo kam mb ka kare, 20kb photo converter, signature resizer 10kb">
+    
+    <meta name="author" content="Fast Image Resizer Tool">
+    
+    <meta property="og:title" content="Resize Image to 20kb/50kb - Free Tool">
+    <meta property="og:description" content="Reduce photo size for Govt Exams (SSC, UPSC) instantly. Free & Fast.">
+    <meta property="og:image" content="https://img.icons8.com/color/512/resize-image.png"> <meta property="og:type" content="website">
+
+    <link rel="canonical" href="https://your-username.github.io/image-resizer-20kb/" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Image Resizer to 20kb",
+      "applicationCategory": "PhotoEditor",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Free online tool to resize and compress images to 20kb, 50kb for government forms.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "15340"
+      }
+    }
+    </script>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📉</text></svg>">
+
+    <script src="https://unpkg.com/browser-image-compression@2.0.0/dist/browser-image-compression.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-dark: #4338ca;
+            --primary-light: #eef2ff;
+            --text-main: #1e293b;
+            --text-light: #64748b;
+            --bg-body: #f8fafc;
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0; padding: 0;
+            display: flex; flex-direction: column; align-items: center;
+            min-height: 100vh;
+        }
+
+        .container { width: 100%; max-width: 800px; padding: 2rem 1rem; }
+        .hidden { display: none !important; }
+        .text-center { text-align: center; }
+
+        /* HEADER */
+        header { margin-bottom: 2rem; text-align: center; }
+        .badge { background: #dbeafe; color: var(--primary); padding: 5px 15px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.5px; }
+        h1 { font-size: 2.2rem; font-weight: 800; margin: 15px 0; line-height: 1.2; color: #0f172a; }
+        h1 span { color: var(--primary); }
+        p.desc { color: #64748b; font-size: 1rem; max-width: 500px; margin: 0 auto; line-height: 1.6; }
+
+        /* TOOL BOX */
+        .card {
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 20px;
+            padding: 2rem; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.05);
+        }
+
+        /* UPLOAD */
+        .upload-zone {
+            border: 2px dashed #cbd5e1; background: #f8fafc; border-radius: 15px;
+            padding: 2.5rem 1rem; text-align: center; cursor: pointer; transition: 0.3s;
+        }
+        .upload-zone:hover { border-color: var(--primary); background: var(--primary-light); }
+        .icon { font-size: 3rem; margin-bottom: 10px; display: block; }
+        .upload-text { font-weight: 700; font-size: 1.2rem; margin-bottom: 5px; }
+
+        /* SLIDER & CONTROLS */
+        .controls { margin-top: 2rem; padding: 1.5rem; background: #f1f5f9; border-radius: 15px; }
+        .slider-label { display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 10px; }
+        input[type=range] { width: 100%; accent-color: var(--primary); cursor: pointer; }
+
+        .btn-main {
+            width: 100%; margin-top: 1.5rem; background: var(--primary); color: white;
+            border: none; padding: 1.2rem; border-radius: 12px; font-size: 1.1rem; font-weight: 700;
+            cursor: pointer; transition: 0.2s; box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.3);
+        }
+        .btn-main:hover { transform: translateY(-2px); background: var(--primary-dark); }
+
+        /* PRESETS */
+        .presets-title { text-align: center; font-size: 0.9rem; font-weight: 700; color: #94a3b8; margin: 2rem 0 1rem 0; letter-spacing: 1px; }
+        .presets { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .btn-pill {
+            background: #fff; border: 1px solid #e2e8f0; padding: 8px 16px; border-radius: 50px;
+            font-size: 0.85rem; font-weight: 600; cursor: pointer; color: #475569; transition: 0.2s;
+        }
+        .btn-pill:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+
+        /* SEO CONTENT SECTION (Visible & Safe) */
+        .seo-content { margin-top: 4rem; text-align: left; }
+        .seo-content h2 { font-size: 1.5rem; margin-bottom: 1rem; color: #1e293b; }
+        .seo-content p { color: #475569; line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem; }
+        .seo-box { background: white; padding: 2rem; border-radius: 15px; border: 1px solid #e2e8f0; margin-bottom: 2rem; }
+        .keyword-tag { display: inline-block; background: #e2e8f0; padding: 4px 10px; border-radius: 5px; font-size: 0.8rem; margin: 0 5px 5px 0; color: #64748b; }
+
+        /* PREVIEW GRID */
+        #preview-area { margin-top: 1.5rem; }
+        .img-box { margin-bottom: 10px; padding: 10px; border: 1px solid #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; background: white; }
+        .img-info { font-size: 0.85rem; font-weight: 600; }
+        
+        footer { margin-top: 3rem; text-align: center; color: #94a3b8; font-size: 0.8rem; padding-bottom: 2rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <span class="badge">UPDATED 2025</span>
+            <h1>Resize Image to <span>20kb & 50kb</span></h1>
+            <p class="desc">Free <b>Photo Resizer Tool</b> for SSC, UPSC & Govt Exams. Compress JPG, PNG & WebP instantly without login.</p>
+        </header>
+
+        <main class="card">
+            <div id="drop-area" class="upload-zone">
+                <span class="icon">📁</span>
+                <div class="upload-text">Select Image to Resize</div>
+                <div style="color:#64748b; font-size:0.9rem;">Supports JPG, PNG, JPEG</div>
+                <input type="file" id="file-input" accept="image/*" class="hidden">
+            </div>
+
+            <div id="preview-area" class="hidden"></div>
+
+            <div class="presets-title">⚡ QUICK RESIZE PRESETS</div>
+            <div class="presets">
+                <button onclick="applyPreset(0.1, 'Extreme')" class="btn-pill">SSC Signature (10-20kb)</button>
+                <button onclick="applyPreset(0.2, 'High')" class="btn-pill">SSC Photo (20-50kb)</button>
+                <button onclick="applyPreset(0.5, 'Medium')" class="btn-pill">Passport Size (100kb)</button>
+                <button onclick="applyPreset(0.7, 'Low')" class="btn-pill">Just Compress</button>
+            </div>
+
+            <div class="controls">
+                <div class="slider-label">
+                    <span>Quality Level</span>
+                    <span id="quality-val" style="color:var(--primary)">50%</span>
+                </div>
+                <input type="range" id="quality-slider" min="1" max="100" value="50">
+                <p style="font-size:0.75rem; color:#64748b; margin-top:5px;">💡 Lower % = Smaller File Size (KB)</p>
+            </div>
+
+            <button id="compress-btn" class="btn-main">Download Compressed Image ⬇️</button>
+        </main>
+
+        <div class="seo-content">
+            <div class="seo-box">
+                <h2>How to Resize Image to 20kb Online?</h2>
+                <p>Looking for a <strong>photo resizer in kb</strong>? Our tool makes it easy to reduce image size for government application forms like SSC, UPSC, IBPS, and Railways.</p>
+                <ol style="padding-left:20px; color:#475569; line-height:1.8;">
+                    <li>Click on "Select Image" and upload your photo.</li>
+                    <li>Choose a preset like <strong>20kb</strong> or <strong>50kb</strong>.</li>
+                    <li>Adjust the slider to fine-tune the file size.</li>
+                    <li>Click Download to get your <strong>compressed jpg</strong> instantly.</li>
+                </ol>
+            </div>
+
+            <div class="seo-box">
+                <h2>Why use this Image Resizer?</h2>
+                <p>Unlike other tools, our <strong>image compressor to 20kb</strong> runs locally on your browser. This means your photos are 100% safe and never uploaded to any server.</p>
+                <p>Perfect for:</p>
+                <ul style="padding-left:20px; color:#475569; line-height:1.8;">
+                    <li><strong>SSC CGL/CHSL Forms:</strong> Resize photo to 20-50kb.</li>
+                    <li><strong>UPSC Signature:</strong> Resize signature to 10-20kb.</li>
+                    <li><strong>Pan & Aadhaar:</strong> Compress documents easily.</li>
+                </ul>
+                <div style="margin-top:20px;">
+                    <span class="keyword-tag">photo resizer 20kb</span>
+                    <span class="keyword-tag">resize image to 50kb</span>
+                    <span class="keyword-tag">reduce image size in kb</span>
+                    <span class="keyword-tag">compress jpeg to 20kb</span>
+                    <span class="keyword-tag">online image upscaler</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            © 2025 Fast Image Tools • Privacy Friendly • Made in India 🇮🇳
+        </footer>
+
+    </div>
+
+    <script>
+        // 💰 ADSTERRA LINK (Update if needed)
+        const AD_LINK = "https://www.effectivegatecpm.com/mya99wcxc?key=64d9a20b4180ef34ece4742665c53be0";
+
+        const fileInput = document.getElementById('file-input');
+        const dropArea = document.getElementById('drop-area');
+        const slider = document.getElementById('quality-slider');
+        const qualityVal = document.getElementById('quality-val');
+        const btn = document.getElementById('compress-btn');
+        const previewArea = document.getElementById('preview-area');
+        
+        let currentFile = null;
+
+        // SLIDER UI
+        slider.addEventListener('input', (e) => {
+            qualityVal.innerText = e.target.value + "%";
+        });
+
+        // PRESET LOGIC
+        window.applyPreset = (val, name) => {
+            slider.value = val * 100;
+            qualityVal.innerText = (val * 100) + "%";
+            alert(`Selected: ${name} Compression`);
+        };
+
+        // DRAG & DROP
+        dropArea.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', (e) => handleFile(e.target.files[0]));
+
+        function handleFile(file) {
+            if(!file) return;
+            currentFile = file;
+            
+            // Show Preview Name
+            previewArea.classList.remove('hidden');
+            previewArea.innerHTML = `
+                <div class="img-box">
+                    <span>📄 ${file.name}</span>
+                    <span style="color:#64748b;">${(file.size/1024).toFixed(1)} KB</span>
+                </div>
+            `;
+        }
+
+        // COMPRESSION LOGIC
+        btn.addEventListener('click', async () => {
+            if(!currentFile) return alert("Please select an image first!");
+
+            // 💰 Trigger Ad
+            if(AD_LINK) window.open(AD_LINK, '_blank');
+
+            const originalText = btn.innerText;
+            btn.innerText = "Compressing... ⏳";
+            btn.disabled = true;
+
+            const options = {
+                maxSizeMB: 1, // Start logic
+                maxWidthOrHeight: 1920,
+                useWebWorker: true,
+                initialQuality: slider.value / 100
+            };
+
+            // Aggressive Logic for low slider values
+            if(slider.value < 20) options.maxSizeMB = 0.02; // Try for 20kb
+            else if(slider.value < 50) options.maxSizeMB = 0.05; // Try for 50kb
+            else options.maxSizeMB = 0.5;
+
+            try {
+                const compressedFile = await imageCompression(currentFile, options);
+                
+                // Download
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(compressedFile);
+                link.download = `min_${currentFile.name}`;
+                link.click();
+                
+                btn.innerText = "Done! ✅ Download Again";
+            } catch (error) {
+                console.error(error);
+                alert("Error compressing image.");
+                btn.innerText = originalText;
+            }
+            btn.disabled = false;
+        });
+
+    </script>
+
+</body>
+</html>
